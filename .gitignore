@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*service_account*.json
+*credentials*.json
+*secret*.json
+*key*.json
+
+# Runtime state
+logs/
+.playwright/
+
+# Collected/private data
+data/apartments.csv
+data/apartments_multi_source.csv
+data/geocode_cache.json
+data/repair_photo_labels.csv
+data/repair_photo_images/
+data/repair_photo_label_sheets/
+
+# Keep public schemas and samples
+!data/apartments_template.csv
+!data/source_registry.csv
+!data/sample_apartments.csv
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/

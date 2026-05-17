@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "trained_rows": 113,
+  "total_rows": 126,
+  "room_distribution": {
+    "1": 31,
+    "2": 61,
+    "3": 19,
+    "4": 2
+  },
+  "patterns": {
+    "digit_k": "\\b([1-5])\\s*[- ]?\\s*[кk]\\b",
+    "digit_dash_x": "\\b([1-5])\\s*[- ]?\\s*[хx]\\s*[- ]?\\s*(?:комн|кімн|кв|ком|кім)\\w*\\b",
+    "digit_dash_oh": "\\b([1-5])\\s*[- ]?\\s*о[хx]\\s+(?:комн|кімн|кв|ком|кім)\\w*\\b",
+    "digit_room_ua": "\\b([1-5])\\s*[- ]?\\s*(?:кімн(?:ат(?:а|и|ну|на|ний|них)?)?|кім\\.?)\\b",
+    "digit_room_ru": "\\b([1-5])\\s*[- ]?\\s*(?:комн(?:ат(?:а|ы|ную|ная|ных)?)?|ком\\.?)\\b",
+    "digit_room_word_ua": "\\b([1-5])\\s+(?:кімнатна|кімнатну|кімнатної|кімнатні|кімнати|кімната)\\b",
+    "digit_no_room_ua": "\\b([1-5])\\s*но\\s*(?:к[іi]мнатн\\w*|к[іi]мн\\w*)\\b",
+    "digit_room_word_ru": "\\b([1-5])\\s+(?:комнатная|комнатную|комнатной|комнаты|комната)\\b",
+    "digit_x": "\\b([1-5])\\s*[хx]\\b",
+    "digit_short_flat": "\\b(?:продам|продаж|продажа)\\s+([1-5])\\s*(?:кв\\.?|квартир[ауиы])\\b",
+    "word_one_ua": "\\b(?:однокімнатн\\w*|однокімн\\w*)\\b",
+    "word_two_ua": "\\b(?:двокімнатн\\w*|двокімн\\w*)\\b",
+    "word_three_ua": "\\b(?:трикімнатн\\w*|трикімн\\w*)\\b",
+    "word_four_ua": "\\b(?:чотирикімнатн\\w*|чотирикімн\\w*)\\b",
+    "word_one_ru": "\\b(?:однокомнатн\\w*|однокомн\\w*)\\b",
+    "word_two_ru": "\\b(?:двухкомнатн\\w*|двухкомн\\w*|двушка|двушк\\w*)\\b",
+    "word_three_ru": "\\b(?:трехкомнатн\\w*|трёхкомнатн\\w*|трехкомн\\w*|трёхкомн\\w*|трешка|трёшка|трешк\\w*|трёшк\\w*)\\b",
+    "word_four_ru": "\\b(?:четырехкомнатн\\w*|четырёхкомнатн\\w*|четырехкомн\\w*|четырёхкомн\\w*)\\b",
+    "studio": "\\b(?:студія|студію|студия|студию|студийн\\w*|смарт|smart)\\b",
+    "more_than_four": "\\b(?:більше\\s*4|более\\s*4|5\\+)\\b"
+  },
+  "pattern_stats": {
+    "digit_k": {
+      "hits": 32,
+      "correct": 32,
+      "precision": 1.0,
+      "rooms": {
+        "2": 20,
+        "3": 6,
+        "1": 6
+      }
+    },
+    "digit_dash_x": {
+      "hits": 8,
+      "correct": 8,
+      "precision": 1.0,
+      "rooms": {
+        "2": 6,
+        "3": 1,
+        "4": 1
+      }
+    },
+    "digit_dash_oh": {
+      "hits": 1,
+      "correct": 1,
+      "precision": 1.0,
+      "rooms": {
+        "3": 1
+      }
+    },
+    "digit_room_ua": {
+      "hits": 32,
+      "correct": 31,
+      "precision": 0.9688,
+      "rooms": {
+        "1": 13,
+        "2": 15,
+        "3": 4
+      }
+    },
+    "digit_room_ru": {
+      "hits": 24,
+      "correct": 24,
+      "precision": 1.0,
+      "rooms": {
+        "1": 7,
+        "2": 13,
+        "3": 3,
+        "4": 1
+      }
+    },
+    "digit_room_word_ua": {
+      "hits": 25,
+      "correct": 25,
+      "precision": 1.0,
+      "rooms": {
+        "1": 11,
+        "2": 12,
+        "3": 2
+      }
+    },
+    "digit_no_room_ua": {
+      "hits": 1,
+      "correct": 1,
+      "precision": 1.0,
+      "rooms": {
+        "1": 1
+      }
+    },
+    "digit_room_word_ru": {
+      "hits": 6,
+      "correct": 6,
+      "precision": 1.0,
+      "rooms": {
+        "1": 3,
+        "4": 1,
+        "2": 2
+      }
+    },
+    "digit_x": {
+      "hits": 8,
+      "correct": 8,
+      "precision": 1.0,
+      "rooms": {
+        "2": 7,
+        "4": 1
+      }
+    },
+    "digit_short_flat": {
+      "hits": 3,
+      "correct": 3,
+      "precision": 1.0,
+      "rooms": {
+        "2": 1,
+        "3": 1,
+        "1": 1
+      }
+    },
+    "word_one_ua": {
+      "hits": 3,
+      "correct": 3,
+      "precision": 1.0,
+      "rooms": {
+        "1": 3
+      }
+    },
+    "word_two_ua": {
+      "hits": 4,
+      "correct": 4,
+      "precision": 1.0,
+      "rooms": {
+        "2": 4
+      }
+    },
+    "word_three_ua": {
+      "hits": 2,
+      "correct": 2,
+      "precision": 1.0,
+      "rooms": {
+        "3": 2
+      }
+    },
+    "word_four_ua": {
+      "hits": 0,
+      "correct": 0,
+      "precision": 0,
+      "rooms": {}
+    },
+    "word_one_ru": {
+      "hits": 0,
+      "correct": 0,
+      "precision": 0,
+      "rooms": {}
+    },
+    "word_two_ru": {
+      "hits": 3,
+      "correct": 3,
+      "precision": 1.0,
+      "rooms": {
+        "2": 3
+      }
+    },
+    "word_three_ru": {
+      "hits": 1,
+      "correct": 1,
+      "precision": 1.0,
+      "rooms": {
+        "3": 1
+      }
+    },
+    "word_four_ru": {
+      "hits": 0,
+      "correct": 0,
+      "precision": 0,
+      "rooms": {}
+    },
+    "studio": {
+      "hits": 3,
+      "correct": 3,
+      "precision": 1.0,
+      "rooms": {
+        "1": 3
+      }
+    },
+    "more_than_four": {
+      "hits": 0,
+      "correct": 0,
+      "precision": 0,
+      "rooms": {}
+    }
+  }
+}

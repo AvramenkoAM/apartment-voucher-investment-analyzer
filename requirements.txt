@@ -1,0 +1,9 @@
+beautifulsoup4>=4.12
+requests>=2.31
+google-api-python-client>=2.0
+google-auth>=2.0
+playwright>=1.59
+numpy>=1.24
+opencv-python>=4.8
+pillow>=10.0
+scikit-learn>=1.3

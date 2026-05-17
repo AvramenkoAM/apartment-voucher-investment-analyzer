@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "trained_rows": 119,
+  "total_rows": 126,
+  "patterns": {
+    "floor_of_total_ua": "\\b(\\d{1,2})\\s*поверх\\s*(?:з|із|/)\\s*(\\d{1,2})\\b",
+    "floor_of_total_ru": "\\b(\\d{1,2})\\s*этаж\\s*(?:из|с|/)\\s*(\\d{1,2})\\b",
+    "floor_slash": "\\b(\\d{1,2})\\s*/\\s*(\\d{1,2})\\s*(?:пов|поверх|эт|этаж)?\\b",
+    "floor_before_ua": "\\b(?:на|розташована на|розташований на)\\s*(\\d{1,2})\\s*(?:му|м|й|ому|ий)?\\s*поверсі\\b",
+    "floor_before_ru": "\\b(?:на|расположена на|расположен на)\\s*(\\d{1,2})\\s*(?:м|ом|й)?\\s*этаже\\b",
+    "first_floor_ua": "\\b(?:перший|першому|першім|першого)\\s+поверх\\w*\\b",
+    "first_floor_ru": "\\b(?:первый|первом|первого)\\s+этаж\\w*\\b",
+    "middle_floor_ua": "\\b(?:середній|средний)\\s+поверх\\b",
+    "middle_floor_ru": "\\b(?:средний)\\s+этаж\\b",
+    "floor_only_ua": "\\b(\\d{1,2})\\s*поверх\\b",
+    "floor_only_ru": "\\b(\\d{1,2})\\s*этаж\\b"
+  },
+  "pattern_stats": {
+    "floor_of_total_ua": {
+      "hits": 24,
+      "correct_floor": 24,
+      "correct_total": 23,
+      "floor_precision": 1.0,
+      "total_precision": 0.9583
+    },
+    "floor_of_total_ru": {
+      "hits": 0,
+      "correct_floor": 0,
+      "correct_total": 0,
+      "floor_precision": 0,
+      "total_precision": 0
+    },
+    "floor_slash": {
+      "hits": 13,
+      "correct_floor": 11,
+      "correct_total": 11,
+      "floor_precision": 0.8462,
+      "total_precision": 0.8462
+    },
+    "floor_before_ua": {
+      "hits": 6,
+      "correct_floor": 6,
+      "correct_total": 0,
+      "floor_precision": 1.0,
+      "total_precision": 0.0
+    },
+    "floor_before_ru": {
+      "hits": 0,
+      "correct_floor": 0,
+      "correct_total": 0,
+      "floor_precision": 0,
+      "total_precision": 0
+    },
+    "first_floor_ua": {
+      "hits": 1,
+      "correct_floor": 1,
+      "correct_total": 0,
+      "floor_precision": 1.0,
+      "total_precision": 0.0
+    },
+    "first_floor_ru": {
+      "hits": 0,
+      "correct_floor": 0,
+      "correct_total": 0,
+      "floor_precision": 0,
+      "total_precision": 0
+    },
+    "middle_floor_ua": {
+      "hits": 0,
+      "correct_floor": 0,
+      "correct_total": 0,
+      "floor_precision": 0,
+      "total_precision": 0
+    },
+    "middle_floor_ru": {
+      "hits": 0,
+      "correct_floor": 0,
+      "correct_total": 0,
+      "floor_precision": 0,
+      "total_precision": 0
+    },
+    "floor_only_ua": {
+      "hits": 28,
+      "correct_floor": 24,
+      "correct_total": 0,
+      "floor_precision": 0.8571,
+      "total_precision": 0.0
+    },
+    "floor_only_ru": {
+      "hits": 3,
+      "correct_floor": 2,
+      "correct_total": 0,
+      "floor_precision": 0.6667,
+      "total_precision": 0.0
+    }
+  },
+  "floor_distribution": {
+    "9": 15,
+    "8": 10,
+    "7": 3,
+    "3": 10,
+    "5": 13,
+    "4": 15,
+    "1": 16,
+    "2": 18,
+    "11": 1,
+    "12": 2,
+    "15": 1,
+    "6": 3,
+    "17": 2,
+    "22": 1,
+    "10": 6,
+    "13": 1,
+    "16": 1,
+    "24": 1
+  },
+  "total_distribution": {
+    "12": 5,
+    "9": 36,
+    "10": 8,
+    "5": 28,
+    "23": 2,
+    "7": 2,
+    "16": 11,
+    "17": 3,
+    "2": 8,
+    "3": 1,
+    "24": 2,
+    "19": 1,
+    "28": 1,
+    "4": 2,
+    "21": 2,
+    "25": 1,
+    "11": 1,
+    "6": 2,
+    "14": 2
+  }
+}
