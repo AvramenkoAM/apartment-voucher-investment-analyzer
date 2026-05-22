@@ -12,6 +12,7 @@ The project turns fragmented real-estate listings into a structured CSV/Google S
 - Calculates approximate distance to city center.
 - Generates Google Maps search URLs from addresses.
 - Syncs the final table to Google Sheets.
+- Exports market-insight charts and a notebook for portfolio analysis.
 - Includes a local photo-based model that classifies repair state into:
   - `радянський ремонт`
   - `євроремонт`
@@ -47,6 +48,7 @@ This project demonstrates an end-to-end data product around that problem:
 │   └── sources.md
 ├── models/                        # Lightweight local model JSON files
 ├── scripts/                       # Collectors and enrichment scripts
+├── visualization/                 # Insight notebook, chart exporter, PNG charts
 └── requirements.txt
 ```
 
@@ -120,6 +122,24 @@ python scripts/enrich_olx_phones_browser.py --headless --manual-wait 0 --phone-w
 
 See [docs/phone_enrichment.md](docs/phone_enrichment.md).
 
+## Market Visualizations
+
+The `visualization/` folder turns the enriched CSV into a portfolio-ready analysis:
+
+- price per square meter by city;
+- repair-state price premium;
+- floor discount;
+- distance-to-center relationship;
+- district ranking;
+- market freshness and source comparison;
+- investment-score shortlist.
+
+```bash
+python visualization/export_charts.py
+```
+
+The exported PNG charts are kept in `visualization/charts/`, and the companion notebook is `visualization/insight_visualization.ipynb`.
+
 ## Portfolio Notes
 
 This repository is structured as a public portfolio version of a real data workflow. The included sample data is anonymized. The system design, scripts, models, and docs are preserved; private listing exports and contact information are not committed.
@@ -131,4 +151,5 @@ This repository is structured as a public portfolio version of a real data workf
 - Playwright for browser-based collection
 - scikit-learn, OpenCV, Pillow, NumPy for local photo features and repair classification
 - Google Sheets API
+- Matplotlib
 - CSV-first data pipeline
